@@ -3,7 +3,7 @@ from config import settings
 
 
 def send_whatsapp_message(message):
-    url = f"https://graph.facebook.com/v17.0/{settings.PHONE_NUMBER_ID}/messages"
+    url = f"https://graph.facebook.com/v22.0/{settings.PHONE_NUMBER_ID}/messages"
     headers = {
         "Authorization": f"Bearer {settings.ACCESS_TOKEN}",
         "Content-Type": "application/json",
@@ -15,4 +15,6 @@ def send_whatsapp_message(message):
         "text": {"body": message},
     }
     response = requests.post(url, json=data, headers=headers)
+    print(response)
+    print(response.text)
     return response.json()
