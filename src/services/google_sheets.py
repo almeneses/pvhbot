@@ -1,5 +1,4 @@
 from datetime import datetime, timedelta
-from config import settings
 from gspread import service_account, Spreadsheet
 
 

@@ -1,5 +1,0 @@
-SHEET_ID = ""
-RANGE_NAME = ""
-ACCESS_TOKEN = ""
-PHONE_NUMBER_ID = ""
-GROUP_ID = ""
